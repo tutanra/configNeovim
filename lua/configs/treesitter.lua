@@ -8,7 +8,7 @@ local base_languages = {
 	"bash",
 	"json",
 	"jsonc",
-	"ini"
+	"ini",
 	"markdown",
 	"html",
 	"css",
