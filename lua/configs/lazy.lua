@@ -148,15 +148,15 @@ return {
 		end,
 	},
 	{
-		"folke/tokyonight.nvim",
+		"AlexvZyl/nordic.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd.colorscheme("tokyonight-storm")
+			vim.cmd.colorscheme("nordic")
 		end,
 	},
 	{
-		"nvim-lualine/lualine.nvim",
+		"folke/tokyonight.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = function()
 			return require("configs.lualine")
