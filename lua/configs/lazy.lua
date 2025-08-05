@@ -138,25 +138,25 @@ return {
 		end,
 	},
 	{
-		"AlexvZyl/nordic.nvim",
+		"rmehri01/onenord.nvim",
 		lazy = true, --false, -- make sure we load this during startup if it is your main colorscheme
 		--priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- load the colorscheme here
-			require("nordic").setup() -- You can pass in your personal settings here.
+			require("onenord").setup() -- You can pass in your personal settings here.
 			-- vim.cmd.colorscheme("night-owl")
 		end,
 	},
 	{
-		"AlexvZyl/nordic.nvim",
+		"rmehri01/onenord.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd.colorscheme("nordic")
+			vim.cmd.colorscheme("onenord")
 		end,
 	},
 	{
-		"folke/tokyonight.nvim",
+		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = function()
 			return require("configs.lualine")

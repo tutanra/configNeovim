@@ -2,7 +2,7 @@
 
 vim.g.mapleader = " "
 
-vim.wo.relativenumber = true
+vim.wo.relativenumber = false
 vim.wo.number = true
 --Mappings
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeFocus)
