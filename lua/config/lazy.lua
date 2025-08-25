@@ -1,4 +1,4 @@
-vim.opt.spell = true
+vim.opt.spell = false
 vim.opt.spelllang = { "en", "es" }
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
