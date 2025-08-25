@@ -33,12 +33,6 @@ vim.keymap.set(
   { desc = "Delete other buffers but the current one" }
 )
 
--- Code Companion
-vim.keymap.set({ "n", "v" }, "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-vim.keymap.set({ "n", "v" }, "<leader>oa", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
--- Expand 'cc' into 'CodeCompanion' in the command line
-vim.cmd([[cab cc CodeCompanion]])
-
 -- Delete all marks
 vim.keymap.set("n", "<leader>md", function()
   vim.cmd("delmarks!")
