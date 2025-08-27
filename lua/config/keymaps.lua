@@ -4,7 +4,7 @@
 --
 
 -- Redefine Ctrl+s to save with the custom function
-vim.api.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
 -- Custom save function
 function SaveFile()
   -- Check if a buffer with a file is open
@@ -39,3 +39,6 @@ vim.keymap.set("n", "<leader>md", function()
   vim.cmd("delmarks A-Z0-9")
   vim.notify("All marks deleted")
 end, { desc = "Delete all marks" })
+
+-- easy align
+vim.keymap.set({ "n", "x" }, "ga", "<Plug>(EasyAlign)", { desc = "EasyAlign" })
