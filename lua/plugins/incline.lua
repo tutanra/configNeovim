@@ -14,7 +14,7 @@ return {
           filename = "[+] " .. filename -- Indicate if the file is modified
         end
 
-        local icon, color = require("nvim-web-devicons").get_icon_color(filename) -- Get the icon and color for the file
+        local icon, color = require("nvim-web-devicons").get_icon_color(filename)
         return { { icon, guifg = color }, { " " }, { filename } } -- Return the rendered content
       end,
     })
