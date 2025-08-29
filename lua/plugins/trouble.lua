@@ -1,5 +1,5 @@
 return {
   "folke/trouble.nvim",
-  enabled = false,
+  enabled = true,
   opts = { use_diagnostic_signs = true },
 }
