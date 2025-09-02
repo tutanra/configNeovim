@@ -4,7 +4,7 @@
 --
 
 -- Redefine Ctrl+s to save with the custom function
--- vim.api.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
 -- Custom save function
 function SaveFile()
   -- Check if a buffer with a file is open
